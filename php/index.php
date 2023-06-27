@@ -14,7 +14,7 @@ if (!empty($_POST)) {
 
 
     if (!$result) {
-        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+        echo "Error ";
     } else {
         echo '<div class="alert alert-success" role="alert">
      data Submit 
@@ -70,13 +70,17 @@ $result = mysqli_query($connection, $sql);
             </thead>
             <tbody>
                 <?php
+                
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "
                   <tr>
                         <td>" . $row['name'] . "</td>
                         <td>" . $row['title'] . "</td>
                         <td>" . $row['description'] . "</td>
-                        <td><button type='button' class='btn btn-success'> edit</button> <button type='button' class='btn btn-danger'> delete</button></td>
+                        <td>
+                        <a href='./editform.php?id=".$row['id']."' class='btn btn-success'> edit   </a>
+                         <a href='./delete.php?id=".$row['id']."'  type='button' class='btn btn-danger'> delete</a>
+                         </td>
                   ";
                 }
                 ?>
