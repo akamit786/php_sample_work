@@ -3,6 +3,7 @@ include './connection.php';
 $id = $_GET['id'];
 $sql = "SELECT * FROM `inde2_db` where `id`= $id";
 $result = mysqli_query($connection, $sql);
+
 $row = mysqli_fetch_assoc($result);
 
 if (($_POST)) {

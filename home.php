@@ -56,9 +56,18 @@ include 'navbar.php';
   <div class="card card-body">
   “We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein </div>
   </div>
-<p>
 </div>
-<!-- button-message-end -->
+<!-- button-message-end --><hr>
+<div class="container text-center">
+<h1 class="pb-2 pt-3"><u>we are offer you</u> </h1>
+<div class="row text-center">
+  <div class="col-md-3 ">hi</div>
+  <div class="col-md-3">hi</div>
+    <div class="col-md-3">hi</div>
+    <div class="col-md-3">hi</div>
+</div>
+  
+</div>
 </div>
 <?php
 include 'footer.php';
